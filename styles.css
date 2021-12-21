@@ -1,0 +1,296 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+body{
+    display: grid;
+    height: 100vh;
+}
+
+@media screen and ( min-width: 900px){
+    
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+h1{
+    font-weight: 1;
+}
+
+/*------------menu-------*/
+.main-nav{
+    background-color: rgba(5, 94, 211, 0.95);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+   }
+   
+   .nav{
+       width: max-content;
+       margin: 0 auto;
+   }
+   
+   .nav__item{
+       display: inline-block;
+       margin: 0 1rem;
+   }
+   
+   .nav__item a{
+       color: rgb(255, 255, 255);
+       display: inline-block;
+       padding: .5rem 0;
+       border-bottom: solid 2px rgba(0,0,0,0);
+       text-decoration: none;
+   }
+   
+   
+   
+   @media (min-width: 900px){
+       .main-nav{
+           width: 50%;
+           bottom: 0rem;
+       }
+   }
+  
+
+/*------------contenedores-------*/
+
+/*------------contenedores 1-------*/
+.Contenedor1 {
+    background-color: rgb(77, 145, 223);
+    padding: 1rem;
+    height: 100%;
+}
+
+.Titulo1{
+    margin: 2rem 1rem 0rem 1rem;
+    width: 12rem;
+    font-size: 3rem;
+}
+
+
+.P1 {
+    margin: 1rem auto;
+    width: 10rem;
+    font-size: xx-small;
+    margin-right: 3rem;
+    margin-top: -6rem;
+}
+
+
+
+@media screen and ( min-width: 550px){
+    
+    .Contenedor1 {
+        height: 35vh;
+        display: flex;
+    }
+
+    .Titulo1{
+        width: 16rem;
+        font-size: 4.5rem;
+        margin: auto;
+
+    }
+
+    .P1 { 
+        width: 20rem;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+}
+
+@media screen and ( min-width: 900px){
+    
+    .Contenedor1 {
+        width: 50vw;
+        height: 100vh;
+        grid-row: span 2;
+        display: block;
+    }
+
+    .Titulo1{
+        width: 20rem;
+        font-size: 4.5rem;
+        margin-left: 1rem;
+    }
+
+    .P1 { 
+        width: 20rem;
+        font-size: 0.8rem ;
+        margin: 1rem auto;
+    }
+}
+
+
+/*------------contenedores 2-------*/
+
+.Contenedor2 {
+    background-color: rgb(81, 183, 243);
+    padding: 1rem;
+}
+
+.Titulo2 {
+    width: 10rem;
+    font-size: 2rem;
+}
+
+
+.P2 {
+    margin: 1rem auto;
+    width: 10rem;
+    font-size: xx-small;
+    margin-right: 3rem;
+    margin-top: -4rem;
+}
+
+
+
+
+
+@media screen and ( min-width: 550px){
+    
+    .Contenedor2 {
+        height: 25vh;
+        display: inline-flex;
+    }
+
+
+    .Titulo2 {
+        width: 20rem;
+        font-size: 2.5rem;
+        margin-left: 1rem ;
+
+    }
+
+    .P2 { 
+        width: 20rem;
+        font-size: 0.8rem ;
+        margin: auto;
+    }
+}
+
+@media screen and ( min-width: 900px){
+    
+    .Contenedor2 {
+        height: 50vh;
+        display: block;
+    }
+
+
+    .P2 {
+        width: 20rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+
+    }
+
+    .P2 { 
+        width: 20rem;
+        font-size: 0.8rem ;
+        margin: 1rem auto;
+    }
+}
+
+
+/*------------contenedores 3-------*/
+
+.Contenedor3 {
+    background-color: rgb(93, 141, 196);
+    
+}
+
+
+.Galeria{
+    overflow:scroll;
+    padding: 0.3rem;
+    height: 70%;
+    width: 80%;
+    margin: 0.5rem auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+
+.Galeria {
+    border-radius: .5rem;
+    overflow: hidden;
+
+}
+
+
+
+.Galeria img{
+    filter: grayscale(100%);
+    max-height: 100%;
+    transition: 1s;
+}
+
+
+.Galeria:hover img{
+    filter: grayscale(0%);
+    transform: scale(1);
+    justify-content: center;
+
+
+}
+
+
+@media screen and ( min-width: 550px){
+    .Contenedor3 {
+        height: 40vh;
+        
+    }
+
+    .Titulo3 {
+        width: 18rem;
+        font-size: 1.5rem;
+        margin: 1rem;
+
+    }
+
+    .Galeria {
+      
+        height: 60%;
+        width: 80%;
+    }
+    
+}
+
+
+
+@media screen and ( min-width: 900px){
+    
+    .Contenedor3 {
+        height: 50vh;
+        display: block;
+
+    }
+
+
+    .Titulo3 {
+        width: 20rem;
+        font-size: 2rem;
+        margin: 1rem;
+
+    }
+
+    .Galeria {
+      
+        height: 70%;
+        width: 90%;
+        margin-inline:  auto;
+        
+    }
+
+
+}
